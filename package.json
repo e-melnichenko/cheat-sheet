@@ -4,7 +4,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "test": "editorconfig-checker --exclude 'node_modules|*.log*|.nuxt|.nitro|.cache|.output|.env|.idea'"
   },
   "devDependencies": {
     "editorconfig-checker": "^4.0.2",
