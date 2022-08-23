@@ -1,9 +1,15 @@
 <template>
-  <div class="app">
+  <div class="site-wrap">
     <MainHeader/>
 
-    <NuxtPage/>
+    <main class="site-content">
+      <NuxtPage/>
+    </main>
 
     footer
   </div>
 </template>
+
+<style lang="scss">
+// don't remove! elsewhere don't apply body styles
+</style>
