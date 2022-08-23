@@ -1,10 +1,10 @@
 <template>
-  <section>section 1</section>
+  <CheatSheetList/>
   <section>section 2</section>
 </template>
 
-<script setup>
-
+<script setup lang="ts">
+import CheatSheetList from "../components/CheatSheet/CheatSheet";
 </script>
 
 <style scoped>
