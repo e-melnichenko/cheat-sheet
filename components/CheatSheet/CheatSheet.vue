@@ -13,11 +13,11 @@
 
 <script setup lang="ts">
 import {onMounted, useFetch} from "#imports";
-import List from "~/components/CheatSheet/List.vue";
-import {CheatSheetListItem} from "~/server/api/cheat-sheet/list";
+import List from "~/components/CheatSheet/CheatSheetList.vue";
+import {CheatSheetListItemType} from "~/server/api/cheat-sheet/list";
 import Filter from "~/components/CheatSheet/Filter.vue";
 
-const {data: cheatSheetList, pending, refresh} = useFetch<CheatSheetListItem[]>('api/cheat-sheet/list');
+const {data: cheatSheetList, pending, refresh} = useFetch<CheatSheetListItemType[]>('api/cheat-sheet/list');
 
 onMounted(() => refresh());
 </script>

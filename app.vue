@@ -2,9 +2,7 @@
   <div class="site-wrap">
     <MainHeader/>
 
-    <main class="site-content">
-      <NuxtPage/>
-    </main>
+    <NuxtPage/>
 
     footer
   </div>

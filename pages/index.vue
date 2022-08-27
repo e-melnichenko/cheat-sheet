@@ -1,6 +1,8 @@
 <template>
-  <CheatSheetList/>
-  <section>section 2</section>
+  <main class="site-content">
+    <CheatSheetList/>
+    <section>section 2</section>
+  </main>
 </template>
 
 <script setup lang="ts">

@@ -2,7 +2,7 @@ import {defineEventHandler} from "h3";
 
 export default defineEventHandler((event) => list);
 
-export interface CheatSheetListItem {
+export interface CheatSheetListItemType {
     id: number,
     name: string,
     description?: string,
@@ -11,7 +11,7 @@ export interface CheatSheetListItem {
     editedAt: string,
 }
 
-const list: CheatSheetListItem[] = [
+const list: CheatSheetListItemType[] = [
     {
         "id": 1,
         "name": "name",
