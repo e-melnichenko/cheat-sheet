@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import CheatSheet from "../components/CheatSheet/CheatSheet";
+import CheatSheet from "../components/cheatSheet/CheatSheet";
 </script>
 
 <style scoped>

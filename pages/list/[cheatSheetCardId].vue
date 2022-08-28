@@ -20,14 +20,14 @@
 </template>
 
 <script setup lang="ts">
-import {computed, onMounted, ref, useFetch, useRoute} from "#imports";
+import {computed, ref, useFetch, useRoute} from "#imports";
 import {CheatSheetItemType} from "~/server/api/cheat-sheet/[id]";
 import {formatDate} from "~/utils";
 import CodeEditor from "~/components/CodeEditor.vue";
 
-const $route = useRoute();
+const route = useRoute();
 const card = ref<CheatSheetItemType>();
-const {data, pending} = await useFetch<CheatSheetItemType>(`/api/cheat-sheet/${$route.params.cheatSheetCardId}`);
+const {data, pending} = await useFetch<CheatSheetItemType>(`/api/cheat-sheet/${route.params.cheatSheetCardId}`);
 card.value = data.value;
 const editDate = computed(() => formatDate(card.value.editedAt));
 </script>

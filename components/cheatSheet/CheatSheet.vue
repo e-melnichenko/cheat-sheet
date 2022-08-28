@@ -13,9 +13,9 @@
 
 <script setup lang="ts">
 import {onMounted, useFetch} from "#imports";
-import CheatSheetList from "~/components/CheatSheet/CheatSheetList.vue";
+import CheatSheetList from "~/components/cheatSheet/CheatSheetList.vue";
 import {CheatSheetListItemType} from "~/server/api/cheat-sheet/list";
-import Filter from "~/components/CheatSheet/Filter.vue";
+import Filter from "~/components/cheatSheet/Filter.vue";
 
 const {data: cheatSheetList, pending, refresh} = useFetch<CheatSheetListItemType[]>('api/cheat-sheet/list');
 

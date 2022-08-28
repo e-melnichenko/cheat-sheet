@@ -9,7 +9,7 @@
 <script setup lang="ts">
 import {CheatSheetListItemType} from "~/server/api/cheat-sheet/list";
 import Loading from "~/components/Loading.vue";
-import CheatSheetListItem from "~/components/CheatSheet/CheatSheetListItem.vue";
+import CheatSheetListItem from "~/components/cheatSheet/CheatSheetListItem.vue";
 
 defineProps<{
   pending: boolean;
