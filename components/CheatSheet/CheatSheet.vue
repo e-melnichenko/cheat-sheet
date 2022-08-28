@@ -3,9 +3,9 @@
     <div class="container">
       <Filter/>
 
-      <List
-          :data="cheatSheetList"
-          :pending="pending"
+      <CheatSheetList
+        :data="cheatSheetList"
+        :pending="pending"
       />
     </div>
   </section>
@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 import {onMounted, useFetch} from "#imports";
-import List from "~/components/CheatSheet/CheatSheetList.vue";
+import CheatSheetList from "~/components/CheatSheet/CheatSheetList.vue";
 import {CheatSheetListItemType} from "~/server/api/cheat-sheet/list";
 import Filter from "~/components/CheatSheet/Filter.vue";
 

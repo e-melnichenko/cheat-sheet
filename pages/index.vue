@@ -1,12 +1,12 @@
 <template>
   <main class="site-content">
-    <CheatSheetList/>
+    <CheatSheet/>
     <section>section 2</section>
   </main>
 </template>
 
 <script setup lang="ts">
-import CheatSheetList from "../components/CheatSheet/CheatSheet";
+import CheatSheet from "../components/CheatSheet/CheatSheet";
 </script>
 
 <style scoped>

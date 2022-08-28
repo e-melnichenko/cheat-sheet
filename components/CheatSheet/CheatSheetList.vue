@@ -3,6 +3,7 @@
     <CheatSheetListItem v-for="item in data" :data="item" :key="item.id"/>
   </ul>
   <Loading v-else/>
+<!--  todo pagination -->
 </template>
 
 <script setup lang="ts">
